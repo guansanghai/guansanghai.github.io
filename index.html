@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="Sanghai's website">
+    <meta name="author" content="Sanghai Guan">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Sanghai Guan</title>
+    <script src="jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron-narrow.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!-- Academic icons -->
+    <link rel="stylesheet" href="academicons/css/academicons.min.css"/>
+
+    <script type="text/javascript">
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+    <script type="text/javascript">
+    function startTime()
+    {
+    var today=new Date()
+    var s=today.getSeconds()
+    document.getElementById('logo-icon').innerHTML=checkTime(s)
+    t=setTimeout('startTime()',500)
+    }
+    function checkTime(i)
+    { 
+      i='<i class="fa fa-battery-'+i%5+'" aria-hidden="true"></i>'+'&nbsp&nbsp'+"Sanghai's Homepage"
+      return i
+    }
+    </script>
+
+    <script type="text/javascript">
+    function openMail(obj)
+    {
+      obj.innerHTML="<a href='mailto:guansanghai@gmail.com' style='color:black'><i class='fa fa-envelope-open-o' aria-hidden='true'></i></a>: guansanghai@gmail.com"
+    }
+    </script>
+
+    <script type="text/javascript">
+    function closeMail(obj)
+    { 
+      obj.innerHTML=<a href='mailto:guansanghai@gmail.com' style='color:black'><i class='fa fa-envelope-o' aria-hidden='true'></i></a>: guansanghai@gmail.com"
+    }
+    </script>
+  </head>
+
+  <body onload="startTime()">
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="index.html">Home</a></li>
+            <li role="presentation"><a href="research.html">Research</a></li>
+            <li role="presentation"><a href="timeline.html">Timeline</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">
+          <div id="logo-icon"></div>
+        </h3>
+      </div>
+
+      <div class="jumbotron">
+        <h2>Sanghai Guan (关桑海)</h2>
+          <p class="lead">
+            <strong>Undergraduate Student</strong> <br>
+            School of Information and Communication Engineering, <br>
+            <a href='https://goo.gl/maps/yudPNk8p7Dv' target="_blank" style='color:black'  data-toggle="tooltip" data-placement="left" title="Google Maps"><i class='fa fa-map-marker' aria-hidden='true'></i></a>
+            &nbspDalian University of Technology, Dalian, China
+          </p>
+          <p>
+            <a href='mailto:guansanghai@gmail.com' style='color:black'  data-toggle="tooltip" data-placement="left" title="Send Email"><i class='fa fa-envelope-o' aria-hidden='true'></i></a>: guansanghai@gmail.com 
+          </p>
+          <p>
+            <a href="http://orcid.org/0000-0003-4574-5682" target="_blank" style='color:black' data-toggle="tooltip" data-placement="bottom" title="ORCID: 0000-0003-4574-5682"><i class="ai ai-orcid"></i></a>&nbsp
+
+            <a href="https://scholar.google.com.hk/" target="_blank" style='color:black' data-toggle="tooltip" data-placement="bottom" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>&nbsp
+
+            <a href="https://www.researchgate.net/profile/Sanghai_Guan" target="_blank" style='color:black' data-toggle="tooltip" data-placement="bottom" title="Research Gate"><i class="ai ai-researchgate"></i></a>&nbsp
+
+            <a href="https://www.facebook.com/profile.php?id=100015610773302" target="_blank" style='color:black' data-toggle="tooltip" data-placement="bottom" title="Facebook: 关桑海"><i class="fa fa-facebook" aria-hidden="true"></i></a>&nbsp
+
+            <a href="https://twitter.com/guansanghai" target="_blank" style='color:black' data-toggle="tooltip" data-placement="bottom" title="Twitter: @guansanghai"><i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp
+
+            <a href="https://github.com/guansanghai" target="_blank" style='color:black' data-toggle="tooltip" data-placement="bottom" title="Github: guansanghai"><i class="fa fa-github" aria-hidden="true"></i></a>&nbsp
+
+            <a href="" target="_blank" style='color:black' data-toggle="tooltip" data-placement="bottom" title="Wechat: guansanghai"><i class="fa fa-weixin" aria-hidden="true"></i></a>&nbsp
+
+            <a href="" target="_blank" style='color:black' data-toggle="tooltip" data-placement="bottom" title="QQ: 183592"><i class="fa fa-qq" aria-hidden="true"></i></a>
+          </p>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-12">
+          <h3>Personal</h3>
+          <h4>1995</h4>
+          <p>Born in Shenyang, China.</p>
+          <h3>Education</h3>
+          <h4>2013-</h4>
+          <p>Electronic Engineering, Dalian University of Technology.</p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; 2017 Sanghai Guan</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+  </body>
+</html>
