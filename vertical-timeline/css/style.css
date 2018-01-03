@@ -3,6 +3,8 @@
 Primary style
 
 -------------------------------- */
+
+/* -------------------------------- 
 html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,24 +37,26 @@ h1, h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
+-------------------------------- */
 
 /* -------------------------------- 
 
 Modules - reusable parts of our design
 
 -------------------------------- */
+
+
 .cd-container {
-  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
   width: 90%;
   max-width: 1170px;
   margin: 0 auto;
 }
 .cd-container::after {
-  /* clearfix */
   content: '';
   display: table;
   clear: both;
 }
+
 
 /* -------------------------------- 
 
@@ -80,6 +84,7 @@ header h1 {
     font-size: 1.5rem;
   }
 }
+
 
 #cd-timeline {
   position: relative;
@@ -160,9 +165,19 @@ header h1 {
 .cd-timeline-img.cd-movie {
   background: #c03b44;
 }
-.cd-timeline-img.cd-location {
-  background: #f0ca45;
+.cd-timeline-img.cd-award {
+  background: #FFCC33;
 }
+.cd-timeline-img.cd-location {
+  background: #00CC66;
+}
+.cd-timeline-img.cd-institute {
+  background: #006699;
+}
+.cd-timeline-img.cd-degree {
+  background: #000000;
+}
+
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
     width: 60px;
@@ -244,7 +259,7 @@ header h1 {
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
-  background: white;
+  background: #d7e4ed;
   border-radius: 0.25em;
   padding: 1em;
   box-shadow: 0 3px 0 #d7e4ed;
@@ -317,7 +332,7 @@ header h1 {
     top: 24px;
     left: 100%;
     border-color: transparent;
-    border-left-color: white;
+    border-left-color: #d7e4ed;
   }
   .cd-timeline-content .cd-read-more {
     float: left;
@@ -325,10 +340,10 @@ header h1 {
   .cd-timeline-content .cd-date {
     position: absolute;
     width: 100%;
-    left: 122%;
+    left: 125%;
     top: 6px;
-    font-size: 16px;
-    font-size: 1rem;
+    font-size: 20px;
+    font-size: 1.5rem;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;
@@ -338,14 +353,14 @@ header h1 {
     left: auto;
     right: 100%;
     border-color: transparent;
-    border-right-color: white;
+    border-right-color: #d7e4ed;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
     float: right;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
     left: auto;
-    right: 122%;
+    right: 125%;
     text-align: right;
   }
   .cssanimations .cd-timeline-content.is-hidden {
